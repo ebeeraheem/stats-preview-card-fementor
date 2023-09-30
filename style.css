@@ -18,6 +18,7 @@ body {
   background-color: var(--pri-background);
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 main {
@@ -87,8 +88,18 @@ main {
 .attribution {
   font-size: 11px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--sec-text);
+  font-family: var(--sec-font);
   bottom: 0;
+  margin-bottom: 15px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  color: currentColor;
+}
+.attribution a:hover {
+  color: var(--accent-text);
+  text-decoration: none;
 }
